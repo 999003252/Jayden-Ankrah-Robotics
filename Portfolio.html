@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jayden Ankrah - Robotics Portfolio</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for a slightly more tech-focused feel */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* Dark blue-gray background */
+            color: #E5E7EB; /* Light gray text */
+        }
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .accent-color {
+            color: #38bdf8; /* A vibrant light blue for accents */
+        }
+        .btn {
+            @apply inline-block bg-sky-500 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-sky-600 transition-all duration-300;
+        }
+        .card-link {
+             @apply block font-semibold text-sky-400 hover:text-sky-300 transition-colors duration-300;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header / Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 glass-effect">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold text-white">Jayden Ankrah</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html#portfolio" class="hover:text-sky-400 transition-colors duration-300">Portfolio</a>
+                <a href="index.html#videos" class="hover:text-sky-400 transition-colors duration-300">Videos</a>
+                <a href="index.html#about" class="hover:text-sky-400 transition-colors duration-300">About</a>
+            </nav>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="index.html#portfolio" class="block py-2 hover:text-sky-400">Portfolio</a>
+            <a href="index.html#videos" class="block py-2 hover:text-sky-400">Videos</a>
+            <a href="index.html#about" class="block py-2 hover:text-sky-400">About</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 pt-24">
+
+        <!-- Hero Section -->
+        <section id="home" class="text-center py-20">
+            <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight">Jayden Ankrah</h1>
+            <p class="mt-4 text-xl md:text-2xl accent-color font-light">Robotics Engineering Student at UConn</p>
+            <p class="mt-6 max-w-2xl mx-auto text-lg text-gray-300">
+                Exploring the intersection of mechanical design, computer vision, and artificial intelligence to build the next generation of autonomous systems.
+            </p>
+            <div class="mt-8">
+                <a href="#portfolio" class="btn">View My Work</a>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="py-20">
+            <h2 class="text-3xl font-bold text-center text-white mb-12">My Portfolio</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Portfolio Item 1 -->
+                <div class="glass-effect rounded-xl overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300 flex flex-col">
+                    <img src="https://placehold.co/600x400/111827/38bdf8?text=Project+1" alt="Project 1" class="w-full h-48 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-semibold text-white mb-2">Autonomous Rover</h3>
+                        <p class="text-gray-300 mb-4 flex-grow">A brief description of the project. This rover uses a Raspberry Pi and computer vision to navigate a predefined course.</p>
+                        <a href="project-1.html" class="card-link mt-auto">View Project &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 2 -->
+                <div class="glass-effect rounded-xl overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300 flex flex-col">
+                    <img src="https://placehold.co/600x400/111827/38bdf8?text=Project+2" alt="Project 2" class="w-full h-48 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-semibold text-white mb-2">Robotic Arm</h3>
+                        <p class="text-gray-300 mb-4 flex-grow">A 3D-printed robotic arm controlled via a custom software interface, designed for pick-and-place tasks.</p>
+                        <a href="project-2.html" class="card-link mt-auto">View Project &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 3 -->
+                <div class="glass-effect rounded-xl overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300 flex flex-col">
+                    <img src="https://placehold.co/600x400/111827/38bdf8?text=Project+3" alt="Project 3" class="w-full h-48 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-semibold text-white mb-2">Drone Pathfinding AI</h3>
+                        <p class="text-gray-300 mb-4 flex-grow">Developing a simulation for a drone that uses A* pathfinding to navigate complex 3D environments.</p>
+                        <a href="project-3.html" class="card-link mt-auto">View Project &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 4 -->
+                <div class="glass-effect rounded-xl overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300 flex flex-col">
+                    <img src="https://placehold.co/600x400/111827/38bdf8?text=Project+4" alt="Project 4" class="w-full h-48 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-semibold text-white mb-2">Project Title 4</h3>
+                        <p class="text-gray-300 mb-4 flex-grow">Brief description of your fourth project.</p>
+                        <a href="project-4.html" class="card-link mt-auto">View Project &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 5 -->
+                <div class="glass-effect rounded-xl overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300 flex flex-col">
+                    <img src="https://placehold.co/600x400/111827/38bdf8?text=Project+5" alt="Project 5" class="w-full h-48 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-semibold text-white mb-2">Project Title 5</h3>
+                        <p class="text-gray-300 mb-4 flex-grow">Brief description of your fifth project.</p>
+                        <a href="project-5.html" class="card-link mt-auto">View Project &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 6 -->
+                <div class="glass-effect rounded-xl overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300 flex flex-col">
+                    <img src="https://placehold.co/600x400/111827/38bdf8?text=Project+6" alt="Project 6" class="w-full h-48 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-semibold text-white mb-2">Project Title 6</h3>
+                        <p class="text-gray-300 mb-4 flex-grow">Brief description of your sixth project.</p>
+                        <a href="project-6.html" class="card-link mt-auto">View Project &rarr;</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- YouTube Videos Section -->
+        <section id="videos" class="py-20">
+            <h2 class="text-3xl font-bold text-center text-white mb-12">Project Videos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Video 1 - REPLACE with your YouTube video ID -->
+                <div class="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden glass-effect">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="w-full h-full"></iframe>
+                </div>
+
+                <!-- Video 2 - REPLACE with your YouTube video ID -->
+                <div class="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden glass-effect">
+                     <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="w-full h-full"></iframe>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- About / Description Section -->
+        <section id="about" class="py-20">
+            <div class="max-w-4xl mx-auto glass-effect rounded-xl p-8 md:p-12">
+                <h2 class="text-3xl font-bold text-center text-white mb-8">About Me</h2>
+                <div class="text-lg text-gray-300 space-y-4 text-left">
+                    <p>Hello! I'm Jayden Ankrah, a passionate and driven first-year Robotics Engineering student at the University of Connecticut. From a young age, I've been fascinated by how things work, which naturally led me to the world of robotics. My goal is to leverage my education to design and build innovative robotic systems that can solve real-world problems.</p>
+                    <p>I am particularly interested in autonomous navigation, machine learning applications in robotics, and human-robot interaction. I am proficient in languages like Python and C++, and have hands-on experience with platforms like Arduino and Raspberry Pi. I'm eager to apply my skills to challenging projects and collaborate with fellow engineers.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-700 mt-20">
+        <div class="container mx-auto px-6 py-8 text-center text-gray-400">
+            <p>&copy; 2024 Jayden Ankrah. All Rights Reserved.</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="#" aria-label="GitHub Profile" class="hover:text-white transition-colors duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+                <a href="#" aria-label="LinkedIn Profile" class="hover:text-white transition-colors duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </a>
+                <a href="mailto:your.email@example.com" aria-label="Email Me" class="hover:text-white transition-colors duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple script for mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
