@@ -1,12 +1,11 @@
+<!-- BEGIN: project-1.html -->
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jayden Ankrah - Robotics Portfolio</title>
-    <!-- Tailwind CSS -->
+    <title>Robotic Arm - Jayden Ankrah's Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -38,10 +37,9 @@
     </style>
 </head>
 <body class="antialiased font-inter">
-    <!-- Header / Navigation -->
     <header class="fixed top-0 left-0 right-0 z-50 glass-effect">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.html" class="text-xl font-bold text-white">Jayden Ankrah</a>
+            <a href="index.html#portfolio" class="text-xl font-bold text-white">Jayden Ankrah</a>
             <nav class="hidden md:flex space-x-8">
                 <a href="index.html#portfolio" class="hover:text-sky-400 transition-colors duration-300">Portfolio</a>
                 <a href="index.html#videos" class="hover:text-sky-400 transition-colors duration-300">Videos</a>
@@ -61,75 +59,51 @@
     </header>
 
     <main class="container mx-auto px-6 pt-24">
-        <section id="home" class="text-center py-20">
-            <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight">Jayden Ankrah</h1>
-            <p class="mt-4 text-xl md:text-2xl accent-color font-light">Robotics Engineering Student at UConn</p>
-            <p class="mt-6 max-w-2xl mx-auto text-lg text-gray-300">
-                Exploring the intersection of mechanical design, computer vision, and artificial intelligence to build the next generation of autonomous systems.
-            </p>
-            <div class="mt-8">
-                <a href="#portfolio" class="inline-block bg-sky-500 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-sky-600 transition-all duration-300">View My Work</a>
+        <section class="py-10">
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-6 text-center">Robotic Arm Project Details</h1>
+            <p class="text-xl text-gray-300 mb-8 text-center">In-depth look at the Robotic Arm (Moving Hand) project.</p>
+
+            <div class="glass-effect rounded-xl p-8 mb-8">
+                <h2 class="text-2xl font-semibold text-white mb-4">Project Overview</h2>
+                <p class="text-gray-300 mb-4">
+                    This project involved the design and construction of a robotic arm capable of mimicking human hand movements...
+                </p>
+                <img src="https://placehold.co/800x500/111827/38bdf8?text=Robotic+Arm+Image" alt="Robotic Arm" class="w-full rounded-lg my-6">
+
+                <h2 class="text-2xl font-semibold text-white mb-4">Components & Design</h2>
+                <ul class="list-disc list-inside text-gray-300 mb-4 space-y-2">
+                    <li><strong>Arduino Uno/Nano:</strong> Microcontroller for servo control.</li>
+                    <li><strong>Servo Motors:</strong> For each joint (fingers, wrist, etc).</li>
+                    <li><strong>3D Printed Parts:</strong> Custom parts for structure and hand.</li>
+                    <li><strong>Flex Sensors:</strong> Used for gesture input.</li>
+                    <li><strong>Power Supply:</strong> External reliable power.</li>
+                </ul>
+
+                <h2 class="text-2xl font-semibold text-white mb-4">Functionality & Programming</h2>
+                <p class="text-gray-300 mb-4">
+                    Programmed in Arduino IDE (C++), each servo controlled independently...
+                </p>
+
+                <h2 class="text-2xl font-semibold text-white mb-4">Challenges & Insights</h2>
+                <p class="text-gray-300 mb-4">
+                    Synchronizing multiple servos was a challenge, solved through calibration...
+                </p>
+
+                <h2 class="text-2xl font-semibold text-white mb-4">Applications & Future Work</h2>
+                <p class="text-gray-300">
+                    This arm can be used to study kinematics, servo control, and prosthetics...
+                </p>
             </div>
-        </section>
 
-        <section id="portfolio" class="py-20">
-            <h2 class="text-3xl font-bold text-center text-white mb-12">My Portfolio</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Items here use inline classes instead of .card-link -->
-                <!-- Repeating layout for each project -->
-                <!-- 6 Projects -->
-                <!-- Only one shown here for brevity -->
-                <div class="glass-effect rounded-xl overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300 flex flex-col">
-                    <img src="https://placehold.co/600x400/111827/38bdf8?text=Project+1" alt="Project 1" class="w-full h-48 object-cover">
-                    <div class="p-6 flex flex-col flex-grow">
-                        <h3 class="text-xl font-semibold text-white mb-2">Autonomous Rover</h3>
-                        <p class="text-gray-300 mb-4 flex-grow">A brief description of the project. This rover uses a Raspberry Pi and computer vision to navigate a predefined course.</p>
-                        <a href="project-1.html" class="block font-semibold text-sky-400 hover:text-sky-300 transition-colors duration-300 mt-auto">View Project &rarr;</a>
-                    </div>
-                </div>
-               <!-- Robotic Arm (Moving Hand) -->
-                <div class="glass-effect rounded-xl overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300 flex flex-col">
-                    <img src="https://placehold.co/600x400/111827/38bdf8?text=Robotic+Arm" alt="Robotic Arm" class="w-full h-48 object-cover">
-                    <div class="p-6 flex flex-col flex-grow">
-                            <h3 class="text-xl font-semibold text-white mb-2">Robotic Arm</h3>
-                            <p class="text-gray-300 mb-4 flex-grow">A robotic hand capable of mimicking human hand movements using servos and Arduino-based controls. Programmed for gestures and basic object manipulation.</p>
-                            <a href="project-2.html" class="block font-semibold text-sky-400 hover:text-sky-300 transition-colors duration-300 mt-auto">View Project &rarr;</a>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <section id="videos" class="py-20">
-            <h2 class="text-3xl font-bold text-center text-white mb-12">Project Videos</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden glass-effect">
-                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="w-full h-full"></iframe>
-                </div>
-                <div class="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden glass-effect">
-                    <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="w-full h-full"></iframe>
-                </div>
-            </div>
-        </section>
-
-        <section id="about" class="py-20">
-            <div class="max-w-4xl mx-auto glass-effect rounded-xl p-8 md:p-12">
-                <h2 class="text-3xl font-bold text-center text-white mb-8">About Me</h2>
-                <div class="text-lg text-gray-300 space-y-4 text-left">
-                    <p>Hello! I'm Jayden Ankrah, a passionate and driven first-year Robotics Engineering student at the University of Connecticut...</p>
-                </div>
+            <div class="text-center mt-12">
+                <a href="index.html#portfolio" class="inline-block bg-sky-500 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-sky-600 transition-all duration-300">Back to Portfolio</a>
             </div>
         </section>
     </main>
 
     <footer class="border-t border-gray-700 mt-20">
         <div class="container mx-auto px-6 py-8 text-center text-gray-400">
-            <p>&copy; 2024 Jayden Ankrah. All Rights Reserved.</p>
-            <div class="flex justify-center space-x-6 mt-4">
-                <a href="#" aria-label="GitHub Profile" class="hover:text-white transition-colors duration-300">...</a>
-                <a href="#" aria-label="LinkedIn Profile" class="hover:text-white transition-colors duration-300">...</a>
-                <a href="mailto:your.email@example.com" aria-label="Email Me" class="hover:text-white transition-colors duration-300">...</a>
-            </div>
+            <p>© 2024 Jayden Ankrah. All Rights Reserved.</p>
         </div>
     </footer>
 
@@ -142,3 +116,4 @@
     </script>
 </body>
 </html>
+<!-- END: project-1.html -->
