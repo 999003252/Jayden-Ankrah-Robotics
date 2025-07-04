@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Autonomous Rover - Jayden Ankrah's Portfolio</title>
+    <title>Robotic Arm - Jayden Ankrah's Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -59,39 +59,38 @@
 
     <main class="container mx-auto px-6 pt-24">
         <section class="py-10">
-            <h1 class="text-4xl md:text-5xl font-bold text-white mb-6 text-center">Autonomous Rover Project Details</h1>
-            <p class="text-xl text-gray-300 mb-8 text-center">A deep dive into the Autonomous Rover's design, functionality, and development.</p>
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-6 text-center">Robotic Arm Project Details</h1>
+            <p class="text-xl text-gray-300 mb-8 text-center">In-depth look at the Robotic Arm (Moving Hand) project.</p>
 
             <div class="glass-effect rounded-xl p-8 mb-8">
                 <h2 class="text-2xl font-semibold text-white mb-4">Project Overview</h2>
                 <p class="text-gray-300 mb-4">
-                    This Autonomous Rover was developed to showcase capabilities in computer vision, robotics, and embedded systems. It utilizes a Raspberry Pi for processing, allowing it to navigate autonomously and interact with its environment based on visual inputs.
+                    This project involved the design and construction of a robotic arm capable of mimicking human hand movements. The goal was to create a low-cost, articulate arm for educational and demonstration purposes.
                 </p>
-                <img src="https://placehold.co/800x500/111827/38bdf8?text=Autonomous+Rover+Detailed+Image" alt="Autonomous Rover" class="w-full rounded-lg my-6">
+                <img src="https://placehold.co/800x500/111827/38bdf8?text=Robotic+Arm+Image" alt="Robotic Arm" class="w-full rounded-lg my-6">
 
-                <h2 class="text-2xl font-semibold text-white mb-4">Technical Specifications</h2>
+                <h2 class="text-2xl font-semibold text-white mb-4">Components & Design</h2>
                 <ul class="list-disc list-inside text-gray-300 mb-4 space-y-2">
-                    <li>**Platform:** Raspberry Pi 4</li>
-                    <li>**Programming Language:** Python</li>
-                    <li>**Key Libraries:** OpenCV for computer vision, RPi.GPIO for hardware interaction</li>
-                    <li>**Sensors:** Camera module for visual input, ultrasonic sensors for distance measurement (optional)</li>
-                    <li>**Actuators:** DC motors with motor driver for locomotion</li>
-                    <li>**Control System:** PID control for movement, custom algorithms for pathfinding</li>
+                    <li>**Arduino Uno/Nano:** Microcontroller for servo control.</li>
+                    <li>**Servo Motors:** Multiple servo motors for each joint (fingers, wrist, arm segments).</li>
+                    <li>**3D Printed Parts:** Custom designed and printed components for the arm's structure and hand.</li>
+                    <li>**Potentiometers/Flex Sensors:** Used for human input control (e.g., a glove with sensors).</li>
+                    <li>**Power Supply:** External power source for reliable servo operation.</li>
                 </ul>
 
-                <h2 class="text-2xl font-semibold text-white mb-4">Computer Vision & Navigation</h2>
+                <h2 class="text-2xl font-semibold text-white mb-4">Functionality & Programming</h2>
                 <p class="text-gray-300 mb-4">
-                    The rover employs OpenCV to identify specific objects or markers in its path, allowing it to make decisions about turning, stopping, or proceeding. For instance, it can be programmed to follow a line, avoid obstacles, or even recognize specific colored targets.
+                    The arm is programmed using Arduino IDE (C++ based). Each servo is controlled independently, allowing for a wide range of motion. Input can come from various sources, including manual controls, or even a data glove that translates human hand movements directly to the robotic arm.
                 </p>
 
-                <h2 class="text-2xl font-semibold text-white mb-4">Challenges Faced & Solutions</h2>
+                <h2 class="text-2xl font-semibold text-white mb-4">Challenges & Insights</h2>
                 <p class="text-gray-300 mb-4">
-                    Developing robust computer vision algorithms that perform reliably in varying lighting conditions was a significant challenge. We addressed this by implementing adaptive thresholding and experimenting with different color space conversions to enhance detection accuracy. Another challenge was power management for extended operation, addressed by optimizing code and selecting efficient motor drivers.
+                    Synchronizing multiple servos for fluid, coordinated movements was a primary challenge. This was overcome by implementing precise timing and calibration routines in the code. Another aspect was designing the mechanical structure for strength and smooth articulation using 3D printing, which involved several iterations.
                 </p>
 
-                <h2 class="text-2xl font-semibold text-white mb-4">Learning Outcomes</h2>
+                <h2 class="text-2xl font-semibold text-white mb-4">Applications & Future Work</h2>
                 <p class="text-gray-300">
-                    This project provided invaluable experience in embedded systems programming, robotics kinematics, and practical application of computer vision. It solidified my understanding of how software interacts with hardware to create intelligent autonomous systems.
+                    This robotic arm serves as an excellent platform for learning about inverse kinematics, servo control, and mechatronics. Future work could include integrating force feedback, vision systems for object grasping, or developing a more advanced control interface.
                 </p>
             </div>
             
