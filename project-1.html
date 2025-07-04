@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Robotic Arm - Jayden Ankrah's Portfolio</title>
+    <title>Autonomous Rover - Jayden Ankrah's Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,11 +38,11 @@
 <body class="antialiased font-inter">
     <header class="fixed top-0 left-0 right-0 z-50 glass-effect">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="../index.html" class="text-xl font-bold text-white">Jayden Ankrah</a>
+            <a href="index.html" class="text-xl font-bold text-white">Jayden Ankrah</a>
             <nav class="hidden md:flex space-x-8">
-                <a href="../index.html#portfolio" class="hover:text-sky-400 transition-colors duration-300">Portfolio</a>
-                <a href="../index.html#videos" class="hover:text-sky-400 transition-colors duration-300">Videos</a>
-                <a href="../index.html#about" class="hover:text-sky-400 transition-colors duration-300">About</a>
+                <a href="index.html#portfolio" class="hover:text-sky-400 transition-colors duration-300">Portfolio</a>
+                <a href="index.html#videos" class="hover:text-sky-400 transition-colors duration-300">Videos</a>
+                <a href="index.html#about" class="hover:text-sky-400 transition-colors duration-300">About</a>
             </nav>
             <button id="mobile-menu-button" class="md:hidden text-white">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -51,72 +51,24 @@
             </button>
         </div>
         <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
-            <a href="../index.html#portfolio" class="block py-2 hover:text-sky-400">Portfolio</a>
-            <a href="../index.html#videos" class="block py-2 hover:text-sky-400">Videos</a>
-            <a href="../index.html#about" class="block py-2 hover:text-sky-400">About</a>
+            <a href="index.html#portfolio" class="block py-2 hover:text-sky-400">Portfolio</a>
+            <a href="index.html#videos" class="block py-2 hover:text-sky-400">Videos</a>
+            <a href="index.html#about" class="block py-2 hover:text-sky-400">About</a>
         </div>
     </header>
 
     <main class="container mx-auto px-6 pt-24">
         <section class="py-10">
-            <h1 class="text-4xl md:text-5xl font-bold text-white mb-6 text-center">Robotic Arm Project Details</h1>
-            <p class="text-xl text-gray-300 mb-8 text-center">In-depth look at the Robotic Arm (Moving Hand) project.</p>
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-6 text-center">Autonomous Rover Project Details</h1>
+            <p class="text-xl text-gray-300 mb-8 text-center">An overview of the autonomous navigation robot.</p>
 
             <div class="glass-effect rounded-xl p-8 mb-8">
                 <h2 class="text-2xl font-semibold text-white mb-4">Project Overview</h2>
                 <p class="text-gray-300 mb-4">
-                    This project involved the design and construction of a robotic arm capable of mimicking human hand movements. The goal was to create a low-cost, articulate arm for educational and demonstration purposes.
+                    This rover project focuses on using a Raspberry Pi with a camera module to navigate a path using computer vision. It detects lane markings and obstacles, adjusting its path using motor control algorithms.
                 </p>
-                <img src="https://placehold.co/800x500/111827/38bdf8?text=Robotic+Arm+Image" alt="Robotic Arm" class="w-full rounded-lg my-6">
-
-                <h2 class="text-2xl font-semibold text-white mb-4">Components & Design</h2>
-                <ul class="list-disc list-inside text-gray-300 mb-4 space-y-2">
-                    <li>**Arduino Uno/Nano:** Microcontroller for servo control.</li>
-                    <li>**Servo Motors:** Multiple servo motors for each joint (fingers, wrist, arm segments).</li>
-                    <li>**3D Printed Parts:** Custom designed and printed components for the arm's structure and hand.</li>
-                    <li>**Potentiometers/Flex Sensors:** Used for human input control (e.g., a glove with sensors).</li>
-                    <li>**Power Supply:** External power source for reliable servo operation.</li>
-                </ul>
-
-                <h2 class="text-2xl font-semibold text-white mb-4">Functionality & Programming</h2>
-                <p class="text-gray-300 mb-4">
-                    The arm is programmed using Arduino IDE (C++ based). Each servo is controlled independently, allowing for a wide range of motion. Input can come from various sources, including manual controls, or even a data glove that translates human hand movements directly to the robotic arm.
-                </p>
-
-                <h2 class="text-2xl font-semibold text-white mb-4">Challenges & Insights</h2>
-                <p class="text-gray-300 mb-4">
-                    Synchronizing multiple servos for fluid, coordinated movements was a primary challenge. This was overcome by implementing precise timing and calibration routines in the code. Another aspect was designing the mechanical structure for strength and smooth articulation using 3D printing, which involved several iterations.
-                </p>
-
-                <h2 class="text-2xl font-semibold text-white mb-4">Applications & Future Work</h2>
-                <p class="text-gray-300">
-                    This robotic arm serves as an excellent platform for learning about inverse kinematics, servo control, and mechatronics. Future work could include integrating force feedback, vision systems for object grasping, or developing a more advanced control interface.
-                </p>
+                <img src="https://placehold.co/800x500/111827/38bdf8?text=Autonomous+Rover" alt="Autonomous Rover" class="w-full rounded-lg my-6">
             </div>
-            
+
             <div class="text-center mt-12">
-                <a href="../index.html#portfolio" class="inline-block bg-sky-500 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-sky-600 transition-all duration-300">Back to Portfolio</a>
-            </div>
-        </section>
-    </main>
-
-    <footer class="border-t border-gray-700 mt-20">
-        <div class="container mx-auto px-6 py-8 text-center text-gray-400">
-            <p>© 2024 Jayden Ankrah. All Rights Reserved.</p>
-            <div class="flex justify-center space-x-6 mt-4">
-                <a href="#" aria-label="GitHub Profile" class="hover:text-white transition-colors duration-300">...</a>
-                <a href="#" aria-label="LinkedIn Profile" class="hover:text-white transition-colors duration-300">...</a>
-                <a href="mailto:your.email@example.com" aria-label="Email Me" class="hover:text-white transition-colors duration-300">...</a>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-    </script>
-</body>
-</html>
+                <a href="index.html#portfolio" class="inline-block bg-sky-500 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-sky
